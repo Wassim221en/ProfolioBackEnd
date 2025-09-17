@@ -1,0 +1,269 @@
+INFO 2025-09-17 20:50:36,669 services 242450 124776565874816 Service operation: create
+INFO 2025-09-17 20:50:36,672 services 242450 124776565874816 Service operation: create
+INFO 2025-09-17 20:50:36,675 services 242450 124776565874816 Service operation: create
+INFO 2025-09-17 20:50:36,680 services 242450 124776565874816 Service operation: create
+INFO 2025-09-17 20:50:36,682 services 242450 124776565874816 Service operation: toggle_featured
+ERROR 2025-09-17 20:50:36,683 services 242450 124776565874816 Service error in create: Missing required fields: recommender_title, recommender_company, recommendation_text, relationship, recommendation_date, rating
+Traceback (most recent call last):
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/common/services.py", line 323, in create
+    self.validate_business_rules(data)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/services.py", line 39, in validate_business_rules
+    self.validate_data(data, required_fields)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/common/services.py", line 230, in validate_data
+    raise ValidationError(f"Missing required fields: {', '.join(missing_fields)}")
+common.exceptions.ValidationError: Missing required fields: recommender_title, recommender_company, recommendation_text, relationship, recommendation_date, rating
+INFO 2025-09-17 20:51:16,384 autoreload 243368 137823071191168 Watching for file changes with StatReloader
+INFO 2025-09-17 20:53:31,519 autoreload 245997 127395124068480 Watching for file changes with StatReloader
+INFO 2025-09-17 20:54:18,521 basehttp 245997 127394966927040 "GET /api/recommendations/ HTTP/1.1" 200 2687
+INFO 2025-09-17 20:54:36,799 basehttp 245997 127394966927040 "GET /api/recommendations/featured/ HTTP/1.1" 200 1690
+INFO 2025-09-17 20:56:49,173 basehttp 245997 127394966927040 "GET /api/recommendations/stats/ HTTP/1.1" 200 310
+INFO 2025-09-17 20:57:50,415 autoreload 250710 131658173939840 Watching for file changes with StatReloader
+WARNING 2025-09-17 20:57:56,621 log 245997 127394966927040 Not Found: /api/docs/
+WARNING 2025-09-17 20:57:56,622 basehttp 245997 127394966927040 "GET /api/docs/ HTTP/1.1" 404 13918
+WARNING 2025-09-17 20:57:57,023 log 245997 127394966927040 Not Found: /favicon.ico
+WARNING 2025-09-17 20:57:57,030 basehttp 245997 127394966927040 "GET /favicon.ico HTTP/1.1" 404 2795
+INFO 2025-09-17 20:58:01,660 basehttp 245997 127394966927040 "GET /api/ HTTP/1.1" 200 64
+INFO 2025-09-17 20:58:05,570 basehttp 245997 127394966927040 "GET /api/ HTTP/1.1" 200 64
+INFO 2025-09-17 20:58:13,303 basehttp 245997 127394966927040 "GET /api/recommendations HTTP/1.1" 301 0
+INFO 2025-09-17 20:58:13,307 basehttp 245997 127394958534336 "GET /api/recommendations/ HTTP/1.1" 200 2687
+INFO 2025-09-17 20:58:17,550 basehttp 245997 127394958534336 "GET /api/ HTTP/1.1" 200 64
+WARNING 2025-09-17 20:58:18,557 log 245997 127394958534336 Not Found: /
+WARNING 2025-09-17 20:58:18,558 basehttp 245997 127394958534336 "GET / HTTP/1.1" 404 2744
+INFO 2025-09-17 20:58:24,198 basehttp 245997 127394958534336 "GET /api/ HTTP/1.1" 200 64
+INFO 2025-09-17 21:07:28,282 autoreload 261318 126258258530432 Watching for file changes with StatReloader
+INFO 2025-09-17 21:08:35,151 autoreload 263185 130659636531328 Watching for file changes with StatReloader
+INFO 2025-09-17 21:10:11,402 autoreload 265272 131379487838336 Watching for file changes with StatReloader
+WARNING 2025-09-17 21:10:14,276 log 265272 131379397392064 Not Found: /api/
+WARNING 2025-09-17 21:10:14,277 basehttp 265272 131379397392064 "GET /api/ HTTP/1.1" 404 3475
+WARNING 2025-09-17 21:10:16,167 log 265272 131379397392064 Not Found: /api/docs/
+WARNING 2025-09-17 21:10:16,168 basehttp 265272 131379397392064 "GET /api/docs/ HTTP/1.1" 404 3490
+WARNING 2025-09-17 21:10:19,173 log 265272 131379397392064 Not Found: /api/docs/
+WARNING 2025-09-17 21:10:19,174 basehttp 265272 131379397392064 "GET /api/docs/ HTTP/1.1" 404 3490
+WARNING 2025-09-17 21:10:19,966 log 265272 131379397392064 Not Found: /api/docs/
+WARNING 2025-09-17 21:10:19,967 basehttp 265272 131379397392064 "GET /api/docs/ HTTP/1.1" 404 3490
+WARNING 2025-09-17 21:10:20,522 log 265272 131379397392064 Not Found: /api/docs/
+WARNING 2025-09-17 21:10:20,522 basehttp 265272 131379397392064 "GET /api/docs/ HTTP/1.1" 404 3490
+WARNING 2025-09-17 21:10:24,583 log 265272 131379397392064 Not Found: /api/docs/
+WARNING 2025-09-17 21:10:24,584 basehttp 265272 131379397392064 "GET /api/docs/ HTTP/1.1" 404 3490
+WARNING 2025-09-17 21:10:27,421 log 265272 131379397392064 Not Found: /api/swagger
+WARNING 2025-09-17 21:10:27,422 basehttp 265272 131379397392064 "GET /api/swagger HTTP/1.1" 404 3496
+INFO 2025-09-17 21:10:30,997 basehttp 265272 131379397392064 "GET /swagger HTTP/1.1" 301 0
+INFO 2025-09-17 21:10:31,014 basehttp 265272 131379388999360 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:10:31,067 basehttp 265272 131379388999360 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-09-17 21:10:31,069 basehttp 265272 131379023050432 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-09-17 21:10:31,076 basehttp 265272 131379014657728 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-09-17 21:10:31,078 basehttp 265272 131379023050432 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+INFO 2025-09-17 21:10:31,079 basehttp 265272 131379397392064 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-09-17 21:10:31,083 basehttp 265272 131379372213952 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-09-17 21:10:31,102 basehttp 265272 131379380606656 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-09-17 21:10:31,406 basehttp 265272 131379023050432 "GET /swagger/?format=openapi HTTP/1.1" 200 24699
+INFO 2025-09-17 21:10:31,407 basehttp 265272 131379388999360 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2025-09-17 21:10:45,325 basehttp 265272 131379388999360 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:10:45,858 basehttp 265272 131379388999360 "GET /swagger/?format=openapi HTTP/1.1" 200 24699
+INFO 2025-09-17 21:10:59,344 basehttp 265272 131379006265024 "GET /docs/ HTTP/1.1" 200 2188
+INFO 2025-09-17 21:11:12,896 basehttp 265272 131379388999360 "GET /redoc/ HTTP/1.1" 200 937
+INFO 2025-09-17 21:11:12,978 basehttp 265272 131379388999360 "GET /static/drf-yasg/redoc-init.js HTTP/1.1" 200 2566
+INFO 2025-09-17 21:11:12,981 basehttp 265272 131379023050432 "GET /static/drf-yasg/redoc/redoc.min.js HTTP/1.1" 200 1042511
+INFO 2025-09-17 21:11:13,156 basehttp 265272 131379023050432 "GET /redoc/?format=openapi HTTP/1.1" 200 24699
+INFO 2025-09-17 21:11:18,581 basehttp 265272 131379023050432 "GET /static/drf-yasg/redoc/redoc-logo.png HTTP/1.1" 200 4969
+INFO 2025-09-17 21:11:27,812 basehttp 265272 131379023050432 "GET /api/api/recommendations/ HTTP/1.1" 200 2687
+INFO 2025-09-17 21:12:50,030 basehttp 265272 131379397392064 "GET /swagger/?format=openapi HTTP/1.1" 200 24699
+INFO 2025-09-17 21:12:50,843 basehttp 265272 131379397392064 "GET /swagger/?format=openapi HTTP/1.1" 200 24699
+INFO 2025-09-17 21:12:53,368 basehttp 265272 131379397392064 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:12:53,395 basehttp 265272 131379397392064 "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2025-09-17 21:12:53,403 basehttp 265272 131379372213952 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2025-09-17 21:12:53,404 basehttp 265272 131379380606656 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:12:53,404 basehttp 265272 131379388999360 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:12:53,406 basehttp 265272 131379023050432 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:12:53,408 basehttp 265272 131379014657728 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:12:53,409 basehttp 265272 131379380606656 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:12:53,829 basehttp 265272 131379380606656 "GET /swagger/?format=openapi HTTP/1.1" 200 24699
+INFO 2025-09-17 21:12:53,835 basehttp 265272 131379380606656 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2025-09-17 21:13:29,340 basehttp 265272 131379380606656 "GET /redoc/?format=openapi HTTP/1.1" 200 24699
+INFO 2025-09-17 21:20:41,652 autoreload 276628 139408456761472 Watching for file changes with StatReloader
+WARNING 2025-09-17 21:21:20,847 log 276628 139408365844160 Not Found: /api/recommendations/
+WARNING 2025-09-17 21:21:20,848 basehttp 276628 139408365844160 "GET /api/recommendations/ HTTP/1.1" 404 3523
+INFO 2025-09-17 21:21:57,986 autoreload 276628 139408456761472 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/portfolio_backend/urls.py changed, reloading.
+INFO 2025-09-17 21:21:58,476 autoreload 278037 128101137010816 Watching for file changes with StatReloader
+INFO 2025-09-17 21:22:52,559 autoreload 279185 137365759508608 Watching for file changes with StatReloader
+WARNING 2025-09-17 21:23:35,539 log 279185 137365599286976 Not Found: /api/recommendations/
+WARNING 2025-09-17 21:23:35,540 basehttp 279185 137365599286976 "GET /api/recommendations/ HTTP/1.1" 404 3523
+INFO 2025-09-17 21:24:10,981 autoreload 279185 137365759508608 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/urls.py changed, reloading.
+INFO 2025-09-17 21:24:11,465 autoreload 280782 137253805703296 Watching for file changes with StatReloader
+INFO 2025-09-17 21:24:31,724 basehttp 280782 137253715179200 "GET /api/recommendations/ HTTP/1.1" 200 2687
+INFO 2025-09-17 21:24:51,699 basehttp 280782 137253715179200 "GET /api/recommendations/0c5b9e2e-7b0e-40da-9076-95321198033f/ HTTP/1.1" 200 1441
+ERROR 2025-09-17 21:25:11,063 exceptions 280782 137253715179200 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 421, in initial
+    self.check_permissions(request)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+WARNING 2025-09-17 21:25:11,065 log 280782 137253715179200 Forbidden: /api/recommendations/
+WARNING 2025-09-17 21:25:11,065 basehttp 280782 137253715179200 "POST /api/recommendations/ HTTP/1.1" 403 171
+INFO 2025-09-17 21:25:29,384 basehttp 280782 137253715179200 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:25:29,466 basehttp 280782 137253706786496 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2025-09-17 21:25:29,468 basehttp 280782 137253715179200 "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2025-09-17 21:25:29,471 basehttp 280782 137253698393792 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:25:29,468 basehttp 280782 137253690001088 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:25:29,475 basehttp 280782 137253706786496 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:25:29,476 basehttp 280782 137253681608384 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:25:29,476 basehttp 280782 137253330351808 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:25:29,821 basehttp 280782 137253706786496 "GET /swagger/?format=openapi HTTP/1.1" 200 14838
+INFO 2025-09-17 21:25:29,841 basehttp 280782 137253706786496 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2025-09-17 21:37:04,122 autoreload 293467 129527229005952 Watching for file changes with StatReloader
+INFO 2025-09-17 21:37:05,798 basehttp 293467 129527138219712 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:37:05,829 basehttp 293467 129527121434304 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:37:05,829 basehttp 293467 129527129827008 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2025-09-17 21:37:05,829 basehttp 293467 129527138219712 "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2025-09-17 21:37:05,833 basehttp 293467 129527113041600 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:37:05,834 basehttp 293467 129527129827008 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:37:05,834 basehttp 293467 129527096256192 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:37:05,835 basehttp 293467 129527104648896 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:37:06,248 basehttp 293467 129527129827008 "GET /swagger/?format=openapi HTTP/1.1" 200 14838
+INFO 2025-09-17 21:37:06,250 basehttp 293467 129527138219712 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+WARNING 2025-09-17 21:37:09,885 log 293467 129527129827008 Not Found: /recommendations/
+WARNING 2025-09-17 21:37:09,885 basehttp 293467 129527129827008 "GET /recommendations/ HTTP/1.1" 404 3417
+WARNING 2025-09-17 21:37:19,058 log 293467 129527129827008 Not Found: /recommendations/
+WARNING 2025-09-17 21:37:19,059 basehttp 293467 129527129827008 "GET /recommendations/ HTTP/1.1" 404 3417
+INFO 2025-09-17 21:37:26,599 basehttp 293467 129527129827008 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:37:26,820 basehttp 293467 129527129827008 "GET /swagger/?format=openapi HTTP/1.1" 200 14838
+WARNING 2025-09-17 21:37:30,132 log 293467 129527129827008 Not Found: /recommendations/
+WARNING 2025-09-17 21:37:30,132 basehttp 293467 129527129827008 "GET /recommendations/ HTTP/1.1" 404 3417
+WARNING 2025-09-17 21:37:35,103 log 293467 129527129827008 Not Found: /recommendations/
+WARNING 2025-09-17 21:37:35,104 basehttp 293467 129527129827008 "GET /recommendations/?page=1 HTTP/1.1" 404 3424
+INFO 2025-09-17 21:38:45,891 autoreload 293467 129527229005952 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py changed, reloading.
+INFO 2025-09-17 21:38:46,463 autoreload 295512 125093738434688 Watching for file changes with StatReloader
+INFO 2025-09-17 21:43:33,589 autoreload 295512 125093738434688 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/serializers.py changed, reloading.
+INFO 2025-09-17 21:43:34,070 autoreload 300468 132646784983168 Watching for file changes with StatReloader
+INFO 2025-09-17 21:44:00,668 autoreload 300468 132646784983168 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/serializers.py changed, reloading.
+INFO 2025-09-17 21:44:01,107 autoreload 300916 137788853350528 Watching for file changes with StatReloader
+INFO 2025-09-17 21:44:15,573 autoreload 300916 137788853350528 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/serializers.py changed, reloading.
+INFO 2025-09-17 21:44:16,083 autoreload 301342 139640500674688 Watching for file changes with StatReloader
+INFO 2025-09-17 21:44:43,673 autoreload 301342 139640500674688 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/serializers.py changed, reloading.
+INFO 2025-09-17 21:44:44,173 autoreload 301806 128271202095232 Watching for file changes with StatReloader
+INFO 2025-09-17 21:44:57,503 autoreload 301806 128271202095232 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py changed, reloading.
+INFO 2025-09-17 21:44:57,969 autoreload 302063 128985991778432 Watching for file changes with StatReloader
+INFO 2025-09-17 21:45:13,632 autoreload 302787 124858813943936 Watching for file changes with StatReloader
+INFO 2025-09-17 21:45:18,363 basehttp 302063 128985901037248 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:45:18,396 basehttp 302063 128985892644544 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2025-09-17 21:45:18,397 basehttp 302063 128985901037248 "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2025-09-17 21:45:18,400 basehttp 302063 128985884251840 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:45:18,401 basehttp 302063 128985875859136 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:45:18,401 basehttp 302063 128985867466432 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:45:18,401 basehttp 302063 128985892644544 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:45:18,403 basehttp 302063 128985518307008 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2025-09-17 21:45:18,740 basehttp 302063 128985892644544 "GET /swagger/?format=openapi HTTP/1.1" 200 12073
+INFO 2025-09-17 21:45:18,742 basehttp 302063 128985901037248 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2025-09-17 21:45:31,027 autoreload 303417 129274971574400 Watching for file changes with StatReloader
+INFO 2025-09-17 21:45:46,163 basehttp 302063 128985892644544 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:45:46,387 basehttp 302063 128985892644544 "GET /swagger/?format=openapi HTTP/1.1" 200 12073
+INFO 2025-09-17 21:45:54,508 basehttp 303417 129274880194240 "GET /api/recommendations/ HTTP/1.1" 200 3167
+INFO 2025-09-17 21:46:05,082 basehttp 303417 129274880194240 "GET /api/recommendations/0c5b9e2e-7b0e-40da-9076-95321198033f/ HTTP/1.1" 200 1441
+WARNING 2025-09-17 21:46:05,453 log 302063 128985901037248 Not Found: /recommendations/
+WARNING 2025-09-17 21:46:05,454 basehttp 302063 128985901037248 "GET /recommendations/ HTTP/1.1" 404 3417
+INFO 2025-09-17 21:46:13,344 basehttp 303417 129274880194240 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:46:13,416 basehttp 303417 129274845574848 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-09-17 21:46:13,419 basehttp 303417 129274880194240 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-09-17 21:46:13,421 basehttp 303417 129274845574848 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+INFO 2025-09-17 21:46:13,423 basehttp 303417 129274837182144 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-09-17 21:46:13,425 basehttp 303417 129274871801536 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-09-17 21:46:13,427 basehttp 303417 129274855016128 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-09-17 21:46:13,430 basehttp 303417 129274863408832 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-09-17 21:46:13,903 basehttp 303417 129274845574848 "GET /swagger/?format=openapi HTTP/1.1" 200 12073
+INFO 2025-09-17 21:46:13,925 basehttp 303417 129274845574848 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+WARNING 2025-09-17 21:46:19,606 log 303417 129274845574848 Not Found: /recommendations/
+WARNING 2025-09-17 21:46:19,607 basehttp 303417 129274845574848 "GET /recommendations/ HTTP/1.1" 404 3417
+WARNING 2025-09-17 21:46:32,171 log 303417 129274845574848 Not Found: /recommendations/
+WARNING 2025-09-17 21:46:32,171 basehttp 303417 129274845574848 "GET /recommendations/?ordering=name HTTP/1.1" 404 3431
+WARNING 2025-09-17 21:46:36,719 log 303417 129274845574848 Not Found: /recommendations/
+WARNING 2025-09-17 21:46:36,720 basehttp 303417 129274845574848 "GET /recommendations/?ordering=rating HTTP/1.1" 404 3433
+WARNING 2025-09-17 21:46:39,087 log 303417 129274845574848 Not Found: /recommendations/
+WARNING 2025-09-17 21:46:39,088 basehttp 303417 129274845574848 "GET /recommendations/?search=fad&ordering=rating HTTP/1.1" 404 3448
+WARNING 2025-09-17 21:46:49,521 log 303417 129274845574848 Not Found: /recommendations
+WARNING 2025-09-17 21:46:49,521 basehttp 303417 129274845574848 "GET //recommendations HTTP/1.1" 404 3414
+WARNING 2025-09-17 21:46:49,826 log 303417 129274845574848 Not Found: /favicon.ico
+WARNING 2025-09-17 21:46:49,827 basehttp 303417 129274845574848 "GET /favicon.ico HTTP/1.1" 404 3402
+WARNING 2025-09-17 21:46:53,682 log 303417 129274845574848 Not Found: /recommendations
+WARNING 2025-09-17 21:46:53,682 basehttp 303417 129274845574848 "GET /recommendations HTTP/1.1" 404 3414
+WARNING 2025-09-17 21:46:56,768 log 303417 129274845574848 Not Found: /recommendations
+WARNING 2025-09-17 21:46:56,768 basehttp 303417 129274845574848 "GET /recommendations HTTP/1.1" 404 3414
+INFO 2025-09-17 21:47:03,015 basehttp 303417 129274845574848 "GET /api HTTP/1.1" 301 0
+INFO 2025-09-17 21:47:03,021 basehttp 303417 129274863408832 "GET /api/ HTTP/1.1" 200 64
+INFO 2025-09-17 21:47:08,612 basehttp 303417 129274863408832 "GET /api/recommendations HTTP/1.1" 301 0
+INFO 2025-09-17 21:47:08,617 basehttp 303417 129274855016128 "GET /api/recommendations/ HTTP/1.1" 200 3167
+ERROR 2025-09-17 21:47:56,823 exceptions 303417 129274863408832 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 421, in initial
+    self.check_permissions(request)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+WARNING 2025-09-17 21:47:56,824 log 303417 129274863408832 Forbidden: /api/recommendations/
+WARNING 2025-09-17 21:47:56,825 basehttp 303417 129274863408832 "POST /api/recommendations/ HTTP/1.1" 403 171
+INFO 2025-09-17 21:48:42,359 basehttp 302063 128985901037248 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:48:42,571 basehttp 302063 128985901037248 "GET /swagger/?format=openapi HTTP/1.1" 200 12073
+WARNING 2025-09-17 21:48:46,740 log 302063 128985901037248 Not Found: /recommendations/
+WARNING 2025-09-17 21:48:46,741 basehttp 302063 128985901037248 "GET /recommendations/ HTTP/1.1" 404 3417
+WARNING 2025-09-17 21:49:03,969 log 302063 128985901037248 Not Found: /api/recommendations_list
+WARNING 2025-09-17 21:49:03,969 basehttp 302063 128985901037248 "GET /api/recommendations_list HTTP/1.1" 404 5612
+INFO 2025-09-17 21:49:06,646 basehttp 302063 128985901037248 "GET /api/ HTTP/1.1" 200 64
+INFO 2025-09-17 21:49:10,389 basehttp 302063 128985901037248 "GET /api/recommendations/ HTTP/1.1" 200 3167
+INFO 2025-09-17 21:50:52,198 autoreload 302063 128985991778432 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/serializers.py changed, reloading.
+INFO 2025-09-17 21:50:52,628 autoreload 309605 129331581804672 Watching for file changes with StatReloader
+INFO 2025-09-17 21:51:13,173 autoreload 309605 129331581804672 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/serializers.py changed, reloading.
+INFO 2025-09-17 21:51:13,660 autoreload 309946 133119507300480 Watching for file changes with StatReloader
+INFO 2025-09-17 21:51:30,114 autoreload 309946 133119507300480 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/serializers.py changed, reloading.
+INFO 2025-09-17 21:51:30,536 autoreload 310239 124706242130048 Watching for file changes with StatReloader
+INFO 2025-09-17 21:51:44,951 autoreload 310239 124706242130048 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py changed, reloading.
+INFO 2025-09-17 21:51:45,442 autoreload 310551 129697204506752 Watching for file changes with StatReloader
+INFO 2025-09-17 21:52:09,017 autoreload 310551 129697204506752 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py changed, reloading.
+INFO 2025-09-17 21:52:09,482 autoreload 311085 136394537578624 Watching for file changes with StatReloader
+INFO 2025-09-17 21:52:24,944 autoreload 311085 136394537578624 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py changed, reloading.
+INFO 2025-09-17 21:52:25,423 autoreload 311355 135648162553984 Watching for file changes with StatReloader
+INFO 2025-09-17 21:52:44,957 autoreload 311355 135648162553984 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py changed, reloading.
+INFO 2025-09-17 21:52:45,389 autoreload 311734 133515312185472 Watching for file changes with StatReloader
+INFO 2025-09-17 21:52:58,863 autoreload 311734 133515312185472 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py changed, reloading.
+INFO 2025-09-17 21:52:59,309 autoreload 311971 125004926341248 Watching for file changes with StatReloader
+INFO 2025-09-17 21:53:15,738 autoreload 311971 125004926341248 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py changed, reloading.
+INFO 2025-09-17 21:53:16,243 autoreload 312239 128898637422720 Watching for file changes with StatReloader
+INFO 2025-09-17 21:53:32,090 autoreload 312872 134027300601984 Watching for file changes with StatReloader
+INFO 2025-09-17 21:53:57,167 basehttp 312872 134027138823872 "GET /api/recommendations/ HTTP/1.1" 200 3316
+INFO 2025-09-17 21:54:08,325 basehttp 312872 134027138823872 "GET /api/recommendations/0c5b9e2e-7b0e-40da-9076-95321198033f/ HTTP/1.1" 200 1441
+INFO 2025-09-17 21:54:16,704 basehttp 312872 134027138823872 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:54:16,807 basehttp 312872 134027138823872 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-09-17 21:54:16,823 basehttp 312872 134027105253056 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-09-17 21:54:16,833 basehttp 312872 134027130431168 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-09-17 21:54:16,834 basehttp 312872 134027096860352 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-09-17 21:54:16,834 basehttp 312872 134027138823872 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+INFO 2025-09-17 21:54:16,838 basehttp 312872 134027113645760 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-09-17 21:54:16,847 basehttp 312872 134027122038464 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-09-17 21:54:17,346 basehttp 312872 134027138823872 "GET /swagger/?format=openapi HTTP/1.1" 200 11578
+INFO 2025-09-17 21:54:17,367 basehttp 312872 134027138823872 "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO 2025-09-17 21:54:36,246 basehttp 312872 134027138823872 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 21:54:36,524 basehttp 312872 134027138823872 "GET /swagger/?format=openapi HTTP/1.1" 200 11578
+WARNING 2025-09-17 21:54:44,734 log 312872 134027138823872 Not Found: /recommendations/
+WARNING 2025-09-17 21:54:44,735 basehttp 312872 134027138823872 "GET /recommendations/ HTTP/1.1" 404 3417
+INFO 2025-09-17 21:55:13,126 basehttp 312239 128898478110400 "GET /api/recommendations/0c5b9e2e-7b0e-40da-9076-95321198033f HTTP/1.1" 301 0
+INFO 2025-09-17 21:55:13,141 basehttp 312239 128898469717696 "GET /api/recommendations/0c5b9e2e-7b0e-40da-9076-95321198033f/ HTTP/1.1" 200 1441
+ERROR 2025-09-17 21:55:25,655 exceptions 312872 134027088467648 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 421, in initial
+    self.check_permissions(request)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+WARNING 2025-09-17 21:55:25,657 log 312872 134027088467648 Forbidden: /api/recommendations/
+WARNING 2025-09-17 21:55:25,657 basehttp 312872 134027088467648 "POST /api/recommendations/ HTTP/1.1" 403 171
