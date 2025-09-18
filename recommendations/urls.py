@@ -1,14 +1,15 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import RecommendationViewSet
+from django.urls import path
+from .views import create_recommendation, list_recommendations, recommendation_detail
 
 app_name = 'recommendations'
 
-# Create router and register viewsets
-router = DefaultRouter()
-router.register(r'recommendations', RecommendationViewSet, basename='recommendation')
-
-# URL patterns
 urlpatterns = [
-    path('', include(router.urls)),
+    # إنشاء توصية جديدة
+    path('create/', create_recommendation, name='create_recommendation'),
+
+    # عرض جميع التوصيات
+    path('', list_recommendations, name='list_recommendations'),
+
+    # عرض تفاصيل توصية محددة
+    path('<uuid:pk>/', recommendation_detail, name='recommendation_detail'),
 ]

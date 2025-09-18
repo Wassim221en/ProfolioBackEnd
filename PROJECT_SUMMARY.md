@@ -35,7 +35,7 @@
 - الإحصائيات والتحليلات
 
 ### ✅ الميزات التقنية
-- قاعدة بيانات PostgreSQL (مع fallback لـ SQLite)
+- قاعدة بيانات MySQL على PythonAnywhere (مع fallback لـ SQLite)
 - Django REST Framework
 - نمط Repository Pattern
 - نمط Service Layer
@@ -164,7 +164,7 @@ LinkedIn: https://linkedin.com/in/ahmed-hassan
 
 - **Backend**: Django 5.2.6
 - **API**: Django REST Framework 3.16.1
-- **Database**: PostgreSQL / SQLite
+- **Database**: MySQL (PythonAnywhere) / SQLite
 - **Authentication**: Django Session Auth
 - **Caching**: Django Cache Framework
 - **Testing**: Django Test Framework
@@ -205,7 +205,7 @@ LinkedIn: https://linkedin.com/in/ahmed-hassan
 
 ## 🚀 الخطوات التالية
 
-1. إعداد PostgreSQL للإنتاج
+1. ✅ إعداد MySQL للإنتاج (مكتمل - PythonAnywhere)
 2. إضافة المصادقة المتقدمة (JWT)
 3. تطبيق Redis للـ Caching
 4. إضافة Elasticsearch للبحث

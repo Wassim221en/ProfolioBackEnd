@@ -1,60 +1,52 @@
-from rest_framework import viewsets, status
+from rest_framework import status
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
+from django.shortcuts import get_object_or_404
 
 from .models import Recommendation
 from .serializers import (
     RecommendationSerializer,
     RecommendationListSerializer,
-    RecommendationCreateSerializer,
-    RecommendationUpdateSerializer
+    RecommendationCreateSerializer
 )
 
 
-class RecommendationViewSet(viewsets.ModelViewSet):
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def create_recommendation(request):
     """
-    Ultra-simple ViewSet for managing recommendations.
-
-    Available endpoints:
-    - **GET /api/recommendations/**: List all recommendations (no pagination, search, or filters)
-    - **POST /api/recommendations/**: Create a new recommendation
-    - **GET /api/recommendations/{id}/**: Get recommendation details
-    - **PUT /api/recommendations/{id}/**: Update recommendation
+    إنشاء توصية جديدة
+    POST /api/recommendations/create/
     """
-
-    queryset = Recommendation.objects.all()
-    permission_classes = [IsAuthenticatedOrReadOnly]
-    pagination_class = None  # No pagination
-    http_method_names = ['get', 'post', 'put', 'head', 'options']  # Only allow these methods
-
-    def get_serializer_class(self):
-        """Return appropriate serializer based on action."""
-        if self.action == 'list':
-            return RecommendationListSerializer
-        elif self.action == 'create':
-            return RecommendationCreateSerializer
-        elif self.action in ['update', 'partial_update']:
-            return RecommendationUpdateSerializer
-        return RecommendationSerializer
-
-    def get_queryset(self):
-        """Return all public recommendations - ultra simple."""
-        return Recommendation.objects.filter(is_public=True).order_by('-recommendation_date')
-
-    def create(self, request, *args, **kwargs):
-        """Create a new recommendation - ultra simple."""
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-
-    def update(self, request, *args, **kwargs):
-        """Update an existing recommendation - ultra simple."""
-        partial = kwargs.pop('partial', False)
-        instance = self.get_object()
-        serializer = self.get_serializer(instance, data=request.data, partial=partial)
-        serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data)
+    serializer = RecommendationCreateSerializer(data=request.data)
+    if serializer.is_valid():
+        recommendation = serializer.save()
+        # إرجاع البيانات الكاملة للتوصية المنشأة
+        response_serializer = RecommendationSerializer(recommendation)
+        return Response(response_serializer.data, status=status.HTTP_201_CREATED)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def list_recommendations(request):
+    """
+    عرض جميع التوصيات
+    GET /api/recommendations/
+    """
+    recommendations = Recommendation.objects.all().order_by('-recommendation_date')
+    serializer = RecommendationListSerializer(recommendations, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def recommendation_detail(request, pk):
+    """
+    عرض تفاصيل توصية محددة
+    GET /api/recommendations/{id}/
+    """
+    recommendation = get_object_or_404(Recommendation, pk=pk)
+    serializer = RecommendationSerializer(recommendation)
+    return Response(serializer.data)

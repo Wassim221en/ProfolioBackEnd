@@ -1,0 +1,28 @@
+name: Deploy to PythonAnywhere
+
+on:
+  push:
+    branches:
+      - main   # غيرها لو بتستخدم branch مختلف
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Upload code to PythonAnywhere
+        run: |
+          tar -czf project.tar.gz .
+          curl -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/files/path/home/wassim221e/project/" \
+            -H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \
+            -F "path=." \
+            -F "content=@project.tar.gz"
+
+      # 3. إعادة تشغيل الويب أبليكيشن
+      - name: Reload web app
+        run: |
+          curl -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/webapps/wassim221e.pythonanywhere.com/reload/" \
+            -H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9"

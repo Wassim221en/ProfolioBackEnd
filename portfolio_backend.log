@@ -267,3 +267,236 @@ Traceback (most recent call last):
 rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
 WARNING 2025-09-17 21:55:25,657 log 312872 134027088467648 Forbidden: /api/recommendations/
 WARNING 2025-09-17 21:55:25,657 basehttp 312872 134027088467648 "POST /api/recommendations/ HTTP/1.1" 403 171
+INFO 2025-09-17 22:02:56,954 autoreload 312239 128898637422720 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/portfolio_backend/settings.py changed, reloading.
+INFO 2025-09-17 22:14:39,202 autoreload 336278 125576078934144 Watching for file changes with StatReloader
+INFO 2025-09-17 22:15:39,828 basehttp 336278 125576014722752 "GET /api/recommendations/ HTTP/1.1" 200 3316
+INFO 2025-09-17 22:15:51,073 basehttp 336278 125576014722752 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 22:24:27,969 autoreload 346179 124273235783808 Watching for file changes with StatReloader
+INFO 2025-09-17 22:24:36,132 basehttp 346179 124273171625664 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-17 22:24:36,186 basehttp 346179 124273171625664 "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2025-09-17 22:24:36,186 basehttp 346179 124272798332608 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2025-09-17 22:24:36,190 basehttp 346179 124272789939904 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2025-09-17 22:24:36,191 basehttp 346179 124273163232960 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2025-09-17 22:24:36,193 basehttp 346179 124273145398976 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2025-09-17 22:24:36,197 basehttp 346179 124273153791680 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2025-09-17 22:24:36,197 basehttp 346179 124272798332608 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14964
+INFO 2025-09-17 22:24:36,673 basehttp 346179 124272798332608 "GET /swagger/?format=openapi HTTP/1.1" 200 11578
+WARNING 2025-09-17 22:24:47,077 log 346179 124272798332608 Not Found: /api/recommendations_list
+WARNING 2025-09-17 22:24:47,077 basehttp 346179 124272798332608 "GET /api/recommendations_list HTTP/1.1" 404 5612
+INFO 2025-09-17 22:24:50,016 basehttp 346179 124272798332608 "GET /api/ HTTP/1.1" 200 64
+INFO 2025-09-17 22:24:54,889 basehttp 346179 124272798332608 "GET /api/recommendations/ HTTP/1.1" 200 3316
+INFO 2025-09-17 22:28:24,557 autoreload 346179 124273235783808 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/portfolio_backend/settings.py changed, reloading.
+INFO 2025-09-17 22:28:25,154 autoreload 350734 124858277920896 Watching for file changes with StatReloader
+INFO 2025-09-17 22:29:15,213 autoreload 350734 124858277920896 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/portfolio_backend/settings.py changed, reloading.
+INFO 2025-09-17 22:29:15,846 autoreload 351644 134409131200640 Watching for file changes with StatReloader
+INFO 2025-09-17 22:31:40,060 autoreload 354368 139600088727680 Watching for file changes with StatReloader
+INFO 2025-09-17 22:42:09,606 autoreload 365753 127992636678272 Watching for file changes with StatReloader
+INFO 2025-09-17 22:44:01,756 autoreload 354368 139600088727680 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/models.py changed, reloading.
+INFO 2025-09-17 22:44:02,128 autoreload 367721 127355569721472 Watching for file changes with StatReloader
+INFO 2025-09-18 16:27:24,430 autoreload 283901 134342750417024 Watching for file changes with StatReloader
+INFO 2025-09-18 16:41:16,775 autoreload 303319 128114103627904 Watching for file changes with StatReloader
+INFO 2025-09-18 16:42:28,063 autoreload 306058 140323934802048 Watching for file changes with StatReloader
+WARNING 2025-09-18 16:43:14,791 log 306058 140323877086912 Not Found: /api/docs/
+WARNING 2025-09-18 16:43:14,792 basehttp 306058 140323877086912 "GET /api/docs/ HTTP/1.1" 404 4072
+WARNING 2025-09-18 16:43:15,165 log 306058 140323877086912 Not Found: /favicon.ico
+WARNING 2025-09-18 16:43:15,165 basehttp 306058 140323877086912 "GET /favicon.ico HTTP/1.1" 404 3402
+WARNING 2025-09-18 16:43:22,628 log 306058 140323877086912 Not Found: /api/docs/swagger
+WARNING 2025-09-18 16:43:22,628 basehttp 306058 140323877086912 "GET /api/docs/swagger HTTP/1.1" 404 4093
+WARNING 2025-09-18 16:43:25,491 log 306058 140323877086912 Not Found: /api/swagger
+WARNING 2025-09-18 16:43:25,491 basehttp 306058 140323877086912 "GET /api/swagger HTTP/1.1" 404 4078
+INFO 2025-09-18 16:43:28,579 basehttp 306058 140323877086912 "GET /swagger/ HTTP/1.1" 200 2191
+INFO 2025-09-18 16:43:28,617 basehttp 306058 140323868694208 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2025-09-18 16:43:28,619 basehttp 306058 140323877086912 "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2025-09-18 16:43:28,621 basehttp 306058 140323868694208 "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2025-09-18 16:43:28,623 basehttp 306058 140323851908800 "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2025-09-18 16:43:28,623 basehttp 306058 140323493770944 "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2025-09-18 16:43:28,624 basehttp 306058 140323860301504 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2025-09-18 16:43:28,625 basehttp 306058 140323843516096 "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2025-09-18 16:43:28,946 basehttp 306058 140323868694208 "GET /swagger/?format=openapi HTTP/1.1" 200 2058
+ERROR 2025-09-18 16:43:52,958 log 306058 140323868694208 Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: recommendations_recommendation
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py", line 40, in list_recommendations
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/models/query.py", line 384, in __iter__
+    self._fetch_all()
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: recommendations_recommendation
+ERROR 2025-09-18 16:43:52,963 basehttp 306058 140323868694208 "GET /api/ HTTP/1.1" 500 191562
+ERROR 2025-09-18 16:43:53,170 log 306058 140323868694208 Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: recommendations_recommendation
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py", line 40, in list_recommendations
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/models/query.py", line 384, in __iter__
+    self._fetch_all()
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: recommendations_recommendation
+ERROR 2025-09-18 16:43:53,172 basehttp 306058 140323868694208 "GET /api/ HTTP/1.1" 500 191288
+WARNING 2025-09-18 16:43:57,188 log 306058 140323868694208 Not Found: /api/recommendations/
+WARNING 2025-09-18 16:43:57,189 basehttp 306058 140323868694208 "GET /api/recommendations/ HTTP/1.1" 404 4105
+WARNING 2025-09-18 16:44:08,749 log 306058 140323843516096 Not Found: /api/list_recommendations/
+WARNING 2025-09-18 16:44:08,750 basehttp 306058 140323843516096 "GET /api/list_recommendations/ HTTP/1.1" 404 4120
+ERROR 2025-09-18 16:45:08,470 exceptions 306058 140323877086912 API Exception: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 421, in initial
+    self.check_permissions(request)
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 339, in check_permissions
+    self.permission_denied(
+  File "/home/wassim221e/Desktop/Projects/ProfolioBackEnd/venv/lib/python3.12/site-packages/rest_framework/views.py", line 180, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+WARNING 2025-09-18 16:45:08,471 log 306058 140323877086912 Forbidden: /api/create/
+WARNING 2025-09-18 16:45:08,472 basehttp 306058 140323877086912 "POST /api/create/ HTTP/1.1" 403 171
+INFO 2025-09-18 16:45:08,480 basehttp 306058 140323877086912 "GET /api/ HTTP/1.1" 200 2
+INFO 2025-09-18 16:45:25,675 autoreload 306058 140323934802048 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/recommendations/views.py changed, reloading.
+INFO 2025-09-18 16:45:26,184 autoreload 312470 136583577776256 Watching for file changes with StatReloader
+INFO 2025-09-18 16:45:39,488 basehttp 312470 136583449671360 "POST /api/create/ HTTP/1.1" 201 1026
+INFO 2025-09-18 16:45:39,495 basehttp 312470 136583449671360 "GET /api/ HTTP/1.1" 200 582
+INFO 2025-09-18 16:45:39,503 basehttp 312470 136583449671360 "GET /api/c9d0c2a9-8aa0-451f-a9c4-42232a39b8c5/ HTTP/1.1" 200 1026
+INFO 2025-09-18 16:48:58,755 autoreload 319306 128183424979072 Watching for file changes with StatReloader
+INFO 2025-09-18 18:51:24,143 autoreload 283901 134342750417024 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/common/models.py changed, reloading.

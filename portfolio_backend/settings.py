@@ -85,53 +85,27 @@ WSGI_APPLICATION = 'portfolio_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# Database Configuration
-# Try PostgreSQL first, fallback to SQLite for development
-try:
-    # Test PostgreSQL connection
-    import psycopg2
-    from psycopg2 import OperationalError
+# Database Configuration - MySQL Only
+# Use PyMySQL as MySQL driver
+import pymysql
+pymysql.install_as_MySQLdb()
 
-    # Try to connect to PostgreSQL
-    test_conn = psycopg2.connect(
-        host=config('DB_HOST', default='localhost'),
-        port=config('DB_PORT', default='5432'),
-        user=config('DB_USER', default='postgres'),
-        password=config('DB_PASSWORD', default='postgres'),
-        database='postgres'  # Connect to default postgres database first
-    )
-    test_conn.close()
-
-    # If successful, use PostgreSQL
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': config('DB_NAME', default='portfolio_db'),
-            'USER': config('DB_USER', default='postgres'),
-            'PASSWORD': config('DB_PASSWORD', default='postgres'),
-            'HOST': config('DB_HOST', default='localhost'),
-            'PORT': config('DB_PORT', default='5432'),
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT'),
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
-    print("Using PostgreSQL database")
+}
 
-except (ImportError, OperationalError, Exception):
-    # Fallback to SQLite for development
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-    print("PostgreSQL not available, using SQLite for development")
-
-# Use SQLite for testing
-import sys
-if 'test' in sys.argv or 'pytest' in sys.modules:
-    DATABASES['default'] = {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': ':memory:',
-    }
+# MySQL for all environments including testing
 
 
 # Password validation

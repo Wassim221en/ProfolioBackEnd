@@ -1,13 +1,10 @@
 from django.db import models
-from django.core.validators import MinValueValidator, MaxValueValidator
+
 from django.utils import timezone
 import uuid
 
 
 class TimestampedModel(models.Model):
-    """
-    Abstract base model that provides self-updating 'created_at' and 'updated_at' fields.
-    """
     created_at = models.DateTimeField(auto_now_add=True, db_index=True)
     updated_at = models.DateTimeField(auto_now=True, db_index=True)
 
@@ -54,20 +51,3 @@ class BaseModel(TimestampedModel, UUIDModel, SoftDeleteModel):
     """
     class Meta:
         abstract = True
-
-
-class RatingMixin(models.Model):
-    """
-    Mixin that provides rating functionality with validation.
-    """
-    rating = models.PositiveSmallIntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(5)],
-        help_text="Rating from 1 to 5 stars"
-    )
-
-    class Meta:
-        abstract = True
-
-    def get_rating_display(self):
-        """Return rating as stars."""
-        return "★" * self.rating + "☆" * (5 - self.rating)

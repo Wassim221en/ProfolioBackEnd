@@ -88,21 +88,20 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Database Setup
+### 4. Database Setup (MySQL)
 ```bash
-# Create PostgreSQL database
-createdb portfolio_db
-
 # Copy environment file
 cp .env.example .env
 
-# Edit .env file with your database credentials
-# DB_NAME=portfolio_db
-# DB_USER=your_username
-# DB_PASSWORD=your_password
-# DB_HOST=localhost
-# DB_PORT=5432
+# Edit .env file with your MySQL credentials
+# DB_NAME=Wassim221e$PortfolioDb
+# DB_USER=Wassim221e
+# DB_PASSWORD=your_mysql_password
+# DB_HOST=Wassim221e.mysql.pythonanywhere-services.com
+# DB_PORT=3306
 ```
+
+**Note**: The project uses MySQL as primary database with SQLite fallback for development.
 
 ### 5. Run Migrations
 ```bash
