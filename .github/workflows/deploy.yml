@@ -15,10 +15,10 @@ jobs:
 
       - name: Package project
         run: |
-          tar --exclude=project.tar.gz --exclude=.git --exclude=.github -czf project.tar.gz .|| true
+          tar --exclude=project.tar.gz --exclude=.git --exclude=.github -czf project3.tar.gz .|| true
       - name: Upload code to PythonAnywhere
         run: |
-          curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/Wassim221e/files/path/home/Wassim221e/PortfolioBackEnd/" \-H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \-F "path=project.tar.gz" \-F "content=@project.tar.gz"
+          curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/Wassim221e/files/path/home/Wassim221e/PortfolioBackEnd/" \-H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \-F "path=project3.tar.gz" \-F "content=@project3.tar.gz"
 
       - name: Reload web app
         run: |
