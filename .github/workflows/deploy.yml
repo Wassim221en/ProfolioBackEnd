@@ -16,7 +16,9 @@ jobs:
       - name: Package project
         run: |
           tar --exclude=project.tar.gz --exclude=.git --exclude=.github -czf project.tar.gz .|| true
-
+      - name : "Delete Old file"
+        run: | 
+          curl -X DELETE "https://www.pythonanywhere.com/api/v0/user/Wassim221e/files/path/home/Wassim221e/PortfolioBackEnd/project.tar.gz" \-H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9"
       - name: Upload code to PythonAnywhere
         run: |
           curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/Wassim221e/files/path/home/Wassim221e/PortfolioBackEnd/" \-H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \-F "path=project.tar.gz" \-F "content=@project.tar.gz"
