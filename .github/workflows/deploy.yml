@@ -15,7 +15,9 @@ jobs:
 
       - name: Upload code to PythonAnywhere
         run: |
-          tar --exclude=project.tar.gz -czf project.tar.gz .
+          mkdir package
+          cp -r * package/
+          tar -czf project.tar.gz -C package .
           curl -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/files/path/home/wassim221e/project/" \
             -H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \
             -F "path=." \
