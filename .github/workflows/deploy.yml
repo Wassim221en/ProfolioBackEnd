@@ -13,13 +13,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Package project
+        run: |
+          tar --exclude=project.tar.gz --exclude=.git --exclude=.github -czf project.tar.gz .
+
       - name: Upload code to PythonAnywhere
         run: |
-          tar --exclude=project.tar.gz -czf project.tar.gz . || true
           curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/files/path/home/wassim221e/PortfolioBackEnd/" \
-            -H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \
-            -F "path=project.tar.gz" \
-            -F "content=@project.tar.gz"
+          -H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \
+          -F "path=project.tar.gz" \
+          -F "content=@project.tar.gz"
+
 
       - name: Reload web app
         run: |
