@@ -21,7 +21,7 @@ jobs:
             -F "path=." \
             -F "content=@project.tar.gz"
 
-      # 3. إعادة تشغيل الويب أبليكيشن
+      # 3. إعادة تشغيل  أبليكيشن
       - name: Reload web app
         run: |
           curl -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/webapps/wassim221e.pythonanywhere.com/reload/" \

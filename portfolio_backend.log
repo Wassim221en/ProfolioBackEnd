@@ -500,3 +500,4 @@ INFO 2025-09-18 16:45:39,495 basehttp 312470 136583449671360 "GET /api/ HTTP/1.1
 INFO 2025-09-18 16:45:39,503 basehttp 312470 136583449671360 "GET /api/c9d0c2a9-8aa0-451f-a9c4-42232a39b8c5/ HTTP/1.1" 200 1026
 INFO 2025-09-18 16:48:58,755 autoreload 319306 128183424979072 Watching for file changes with StatReloader
 INFO 2025-09-18 18:51:24,143 autoreload 283901 134342750417024 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/common/models.py changed, reloading.
+INFO 2025-09-18 18:51:24,559 autoreload 319306 128183424979072 /home/wassim221e/Desktop/Projects/ProfolioBackEnd/common/models.py changed, reloading.
