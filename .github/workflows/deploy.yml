@@ -3,7 +3,7 @@ name: Deploy to PythonAnywhere
 on:
   push:
     branches:
-      - main   # غيرها لو بتستخدم branch مختلف
+      - main   # غيّرها لو تستخدم برانش تاني
 
 jobs:
   deploy:
@@ -17,12 +17,11 @@ jobs:
         run: |
           tar --exclude=project.tar.gz -czf project.tar.gz . || true
           curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/files/path/home/wassim221e/PortfolioBackEnd/" \
-          -H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \
-          -F "path=/home/wassim221e/PortfolioBackEnd/project.tar.gz" \
-          -F "content=@project.tar.gz"
+            -H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \
+            -F "path=project.tar.gz" \
+            -F "content=@project.tar.gz"
 
-      # 3. إعادة تشغيل  أبليكيشن
       - name: Reload web app
         run: |
-          curl -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/webapps/wassim221e.pythonanywhere.com/reload/" \
+          curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/webapps/wassim221e.pythonanywhere.com/reload/" \
             -H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9"
