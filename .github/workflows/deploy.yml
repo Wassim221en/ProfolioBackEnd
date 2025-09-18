@@ -20,7 +20,6 @@ jobs:
         run: |
           curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/Wassim221e/files/path/home/Wassim221e/PortfolioBackEnd/" \-H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \-F "path=project.tar.gz" \-F "content=@project.tar.gz"
 
-
       - name: Reload web app
         run: |
           curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/webapps/wassim221e.pythonanywhere.com/reload/" \-H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9"
