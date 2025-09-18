@@ -19,7 +19,7 @@ jobs:
 
       - name: Upload code to PythonAnywhere
         run: |
-          curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/files/path/home/wassim221e/PortfolioBackEnd/" \-H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \-F "path=project.tar.gz" \-F "content=@project.tar.gz"
+          curl --fail -X POST "https://www.pythonanywhere.com/api/v0/user/wassim221e/files/path/home/wassim221e/" \-H "Authorization: Token fcbe37f719479f4b56fc84b046f7e61d2facdbb9" \-F "path=project.tar.gz" \-F "content=@project.tar.gz"
 
 
       - name: Reload web app
