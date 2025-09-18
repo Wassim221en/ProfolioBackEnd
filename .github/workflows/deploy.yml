@@ -15,7 +15,7 @@ jobs:
 
       - name: Package project
         run: |
-          tar --exclude=project.tar.gz --exclude=.git --exclude=.github -czf project.tar.gz .
+          tar --exclude=project.tar.gz --exclude=.git --exclude=.github -czf project.tar.gz .|| true
 
       - name: Upload code to PythonAnywhere
         run: |
